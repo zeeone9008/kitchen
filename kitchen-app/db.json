@@ -1,0 +1,54 @@
+{
+  "home": [
+    {
+      "id": 1,
+      "name": "Hob 1",
+      "description": "some hob description",
+      "image_url" : "images/hob.jpg"
+    }, 
+    {
+      "id": 2,
+      "name": "Hob 2",
+      "description": "some hob description1",
+      "image_url" : "images/hob.jpg"
+    }, {
+      "id": 3,
+      "name": "Hob 1",
+      "description": "some hob description",
+      "image_url" : "images/hob.jpg"
+    }, 
+    {
+      "id": 1,
+      "name": "Hob 2",
+      "description": "some hob description1",
+      "image_url" : "images/hob.jpg"
+    }, {
+      "id": 1,
+      "name": "Hob 1",
+      "description": "some hob description",
+      "image_url" : "images/hob.jpg"
+    } 
+  ],
+  "appliances": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "sinks": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "hobs": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "cart":[]
+}
