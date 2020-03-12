@@ -1,18 +1,15 @@
 import React, { Component } from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
-
 import Cards from './Cards'
-import Slider from './Slider' 
 import axios from 'axios';
 
-export default class HomeComponent extends Component {
-
+export default class CartComponent extends Component {
     constructor(props){
         super(props)
         this.state = {
             designs: []
         }
-        axios.get(`http://localhost:3001/home`)
+        axios.get(`http://localhost:3001/carts`)
         .then(res => { 
             this.setState({ designs : res.data });
         })
@@ -21,9 +18,8 @@ export default class HomeComponent extends Component {
     render() {
         return (
             <div>
-                <Slider />
-                <h3><u>Trending Appliances</u></h3>
-                <Cards designs={this.state.designs}/> 
+                
+                {/* <Cards designs={this.state.designs}/>  */}
             </div>
         )
     }

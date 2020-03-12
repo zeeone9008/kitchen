@@ -19,16 +19,17 @@ export default class Navbar extends Component {
      <Router></Router>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li> <Link to="/">Home</Link></li>
-        <li> <Link to="/designs">Designs</Link></li>
-        <li> <Link to="/appliances">Appliances</Link></li>
+        <li> <Link to="/hobs">Hobs</Link></li>
+        <li> <Link to="/appliances">Refrigerator</Link></li>
         <li> <Link to="/sinks">Sinks</Link></li>
         
     </ul>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><div class="caption right-align"><Search/> </div> </li> 
-        <li><a href="sass.html">Cart</a></li>
-        <li><a href="badges.html">Signin</a></li>
-        <li><a href="collapsible.html">Create Account</a></li> </ul>  
+        <li> <Link to="/carts">cart</Link></li>
+        <li> <Link to="/signin">Signin</Link></li>
+        <li> <Link to="/create">Create Account</Link></li>
+     </ul>  
        
 
       

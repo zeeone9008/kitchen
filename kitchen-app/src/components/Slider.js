@@ -13,35 +13,32 @@ export default class Slider extends Component {
     }
     render() {
         return (
-            <div class="col s4">
-            <div className="container">
-             
                <div className="container">
-                                        <div class="slider">
+                     <div class="slider full-width">
                                 <ul class="slides">
                                 <li>
-                                <img class="activator" src="images/hob3.jpg"/> 
+                                <img className="img-fluid activator" src="images/8.jpg"/> 
                                     <div class="caption center-align">
                                     <h3>This is our big Tagline!</h3>
                                     <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                                     </div>
                                 </li>
                                 <li>
-                                <img class="activator" src="images/hob3.jpg"/>
+                                <img class="activator" src="images/7.jpg"/>
                                     <div class="caption left-align">
                                     <h3>Left Aligned Caption</h3>
                                     <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                                     </div>
                                 </li>
                                 <li>
-                                <img class="activator" src="images/hob3.jpg"/>
+                                <img class="activator" src="images/h4.jpg"/>
                                     <div class="caption right-align">
                                     <h3>Right Aligned Caption</h3>
                                     <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
                                     </div>
                                 </li>
                                 <li>
-                                <img class="activator" src="images/hob3.jpg"/> 
+                                <img class="activator" src="images/5.jpg"/> 
                                     <div class="caption center-align">
                                     <h3>This is our big Tagline!</h3>
                                     <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -50,8 +47,9 @@ export default class Slider extends Component {
                                 </ul>
                             </div> 
                </div> 
-             </div>
-             </div>
+            
+            
+           
         )
     }
 }   

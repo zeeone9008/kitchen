@@ -20,7 +20,7 @@ export default class Cards extends Component {
                     
                     this.props.designs.map(item => {
                     return  <div class="col s4">
-                        <div class="card medium">
+                        
                             <div class="card" >
                                 <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src={item.image_url} />
@@ -35,9 +35,6 @@ export default class Cards extends Component {
                                 </div>
                             </div> 
                         </div>
-                    
-                        
-                    </div>
                     })  
                      : null
                 }

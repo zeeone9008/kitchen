@@ -6,7 +6,10 @@ import Footer from './components/Footer'
 import HomeComponent from './components/home.component'
 import HobComponent from './components/hobs.component'
 import AppliancesComponent from './components/appliances.component'
-import SinksComponent from './components/appliances.component'
+import SinksComponent from './components/sinks.component'
+import CartComponent from './components/cart.component'
+import SigninComponent from './components/signin.component'
+import CreateComponent from './components/create.component'
 import {  BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
             <Route path="/hobs" component={HobComponent} />   
             <Route path="/appliances" component={AppliancesComponent} />  
             <Route path="/sinks" component={SinksComponent} />   
+            <Route path="/carts" component={CartComponent} /> 
+            <Route path="/signin" component={SigninComponent} /> 
+            <Route path="/create" component={CreateComponent} /> 
         </Switch> 
        <Footer/>
        </BrowserRouter>
