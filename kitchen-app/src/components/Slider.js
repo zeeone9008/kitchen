@@ -38,7 +38,7 @@ export default class Slider extends Component {
                                     </div>
                                 </li>
                                 <li>
-                                <img class="activator" src="images/5.jpg"/> 
+                                <img class="activator" src="images/d1.jpg"/> 
                                     <div class="caption center-align">
                                     <h3>This is our big Tagline!</h3>
                                     <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>

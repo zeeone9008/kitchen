@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
 import { FaOtter } from 'react-icons/fa';
-
+import axios from 'axios'; 
 
 export default class Cards extends Component {
 
@@ -10,7 +10,7 @@ export default class Cards extends Component {
  
     }
     buyProduct(item){
-
+        this.props.addToCart(item);
     }
     render() {
         return (
@@ -27,7 +27,12 @@ export default class Cards extends Component {
                                 </div>
                                 <div class="card-content">
                                 <span class="card-title activator grey-text text-darken-4"><div class="caption center-align">{item.name}</div><i class="material-icons right">+</i></span>
-                                <p><a href="#" onClick='buyProduct(item)'>BUY NOW</a></p>
+                                <p>
+                                {item.addedToCart ? 
+                                    <span> Added to cart </span> :
+                                    <a onClick= {e => this.buyProduct(item)}>BUY NOW</a>
+                                }
+                                </p>
                                 </div>
                                 <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">{item.name}<i class="material-icons right">X</i></span>

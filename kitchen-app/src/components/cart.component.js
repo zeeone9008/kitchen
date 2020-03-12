@@ -7,20 +7,70 @@ export default class CartComponent extends Component {
     constructor(props){
         super(props)
         this.state = {
-            designs: []
+            cartItems: [],
+            totalPrice: 0
         }
-        axios.get(`http://localhost:3001/carts`)
-        .then(res => { 
-            this.setState({ designs : res.data });
+        axios.get(`http://localhost:3001/cart`)
+        .then(res => {
+            let totalPrice = 0; 
+            res.data.map(e => {
+              totalPrice += e.price;
+            });
+            this.setState({ cartItems : res.data, totalPrice: totalPrice  });
         })
     }
 
     render() {
         return (
             <div>
-                
-                {/* <Cards designs={this.state.designs}/>  */}
-            </div>
+             <div class="row">
+
+             <div class="col s9 ">
+             <table class="striped">
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {this.state.cartItems.map(item => {
+            return <tr>
+                    <td>{item.name}</td>
+                    <td>{item.description}</td>
+                    <td>{item.price} $</td>
+                  </tr>
+          })}
+          
+        </tbody>
+      </table>
+      <div class="col"> 
+                                 <p>Total:</p>
+                                </div>
+                                <div class="col ">                               
+        <div class="card-content black-text">
+        <p>{this.state.totalPrice} $</p>
+        </div>
+                                 </div>
+                                </div>
+                            <div class="col s3 m2">
+                                <div class="card">
+                                    <div class="card-image">
+                                    <img class="activator" src="images/7.jpg"/>
+                                    {/* <span class="card-title">Card Title</span> */}
+                                    </div>
+                                    <div class="card-content">
+                                    <p>{this.state.totalPrice}</p>
+                                    </div>    
+                                </div>
+                                
+                                
+                                </div>
+                            
+                            </div> 
+                            </div>
         )
     }
 }
