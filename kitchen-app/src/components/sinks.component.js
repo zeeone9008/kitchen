@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
 import Cards from './Cards'
+import _ from 'lodash';
 import axios from 'axios';
 
 export default class SinksComponent extends Component {
@@ -14,12 +15,24 @@ export default class SinksComponent extends Component {
             this.setState({ designs : res.data });
         })
     }
+    addItemForCheckout(item){
+        let items = this.state.designs;
+        let checkoutItem = _.find(items, function(o) { return o.id === item.id });
+        checkoutItem.addedToCart = true;
 
+        axios.post('http://localhost:3001/cart',  item )
+          .then((response) => {
+            this.setState({designs: items} )
+          })
+          .catch( (error) => {
+            console.log(error);
+          });
+    }
     render() {
         return (
             <div>
                 
-                <Cards designs={this.state.designs}/> 
+                <Cards addToCart={ this.addItemForCheckout.bind(this)} designs={this.state.designs}/> 
             </div>
         )
     }

@@ -18,30 +18,30 @@ export default class Slider extends Component {
                                 <ul class="slides">
                                 <li>
                                 <img className="img-fluid activator" src="images/8.jpg"/> 
-                                    <div class="caption center-align">
-                                    <h3>This is our big Tagline!</h3>
-                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                <div class="caption left-align">
+                                    <h3>Oven</h3>
+                                    <h5 class="light grey-text text-lighten-3"></h5>
                                     </div>
                                 </li>
                                 <li>
                                 <img class="activator" src="images/7.jpg"/>
                                     <div class="caption left-align">
-                                    <h3>Left Aligned Caption</h3>
-                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                    <h3>Next Gen HOBS</h3>
+                                    <h5 class="light grey-text text-lighten-3"></h5>
                                     </div>
                                 </li>
                                 <li>
                                 <img class="activator" src="images/h4.jpg"/>
                                     <div class="caption right-align">
-                                    <h3>Right Aligned Caption</h3>
-                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                    <h3>Gas Hobs</h3>
+                                    <h5 class="light grey-text text-lighten-3"></h5>
                                     </div>
                                 </li>
                                 <li>
                                 <img class="activator" src="images/d1.jpg"/> 
                                     <div class="caption center-align">
-                                    <h3>This is our big Tagline!</h3>
-                                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                    <h3>Next Gen Appliances Designs</h3>
+                                    <h5 class="light grey-text text-lighten-3"></h5>
                                     </div>
                                 </li>
                                 </ul>

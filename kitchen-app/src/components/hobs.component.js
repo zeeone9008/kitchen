@@ -18,7 +18,6 @@ export default class HobComponent extends Component {
     }
 
     addItemForCheckout(item){
-        alert('asdasd');
         let items = this.state.designs;
         let checkoutItem = _.find(items, function(o) { return o.id === item.id });
         checkoutItem.addedToCart = true;
@@ -35,7 +34,7 @@ export default class HobComponent extends Component {
     render() {
         return (
             <div>
-                <img class="activator" width="1400" height="400" src="images/h4.jpg"/>
+               
                 <h3><u>HOBS</u></h3>
                 <Cards addToCart={ this.addItemForCheckout.bind(this)} designs={this.state.designs}/> 
             </div>

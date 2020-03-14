@@ -3,7 +3,9 @@ import 'materialize-css/dist/css/materialize.min.css'
 import Cards from './Cards'
 
 import axios from 'axios';
-
+import {
+    Link
+  } from "react-router-dom";
 
 export default class SigninComponent extends Component {
     constructor(props){
@@ -36,7 +38,7 @@ export default class SigninComponent extends Component {
                                         <label for="password">Password</label>
                                         </div>
                                     </div>
-                                    <a href="#!" class="btn waves-effect waves-red">signin</a>
+                                    <Link to="/"><a href="#!" class="btn waves-effect waves-red">signin</a></Link>
                                     </form>
                                 </div>            
             </div>

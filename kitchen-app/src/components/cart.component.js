@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
 import Cards from './Cards'
+import M from 'materialize-css'
 import axios from 'axios';
 
 export default class CartComponent extends Component {
@@ -30,7 +31,7 @@ export default class CartComponent extends Component {
         <thead>
           <tr>
               <th>Name</th>
-              <th>Item Name</th>
+              {/* <th>Item Name</th> */}
               <th>Item Price</th>
           </tr>
         </thead>
@@ -39,8 +40,8 @@ export default class CartComponent extends Component {
           {this.state.cartItems.map(item => {
             return <tr>
                     <td>{item.name}</td>
-                    <td>{item.description}</td>
-                    <td>{item.price} $</td>
+                    {/* <td>{item.description}</td> */}
+                    <td>{item.price} €</td>
                   </tr>
           })}
           
@@ -52,6 +53,9 @@ export default class CartComponent extends Component {
                                 <div class="col ">                               
         <div class="card-content black-text">
         <p>{this.state.totalPrice} $</p>
+        
+        <a class="btn" onClick={e => M.toast({html: 'item ordered successfully', completeCallback: 
+                   function(){alert('Successfully ordered the item please wait for it to deliver to your address')}})}>CONFIRM</a>
         </div>
                                  </div>
                                 </div>
@@ -62,7 +66,7 @@ export default class CartComponent extends Component {
                                     {/* <span class="card-title">Card Title</span> */}
                                     </div>
                                     <div class="card-content">
-                                    <p>{this.state.totalPrice}</p>
+                                    <p>price :€19</p>
                                     </div>    
                                 </div>
                                 

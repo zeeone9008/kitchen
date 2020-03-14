@@ -3,59 +3,67 @@
     {
       "id": 1,
       "name": "Gas Hob 1",
-      "description": "some hob description",
-      "image_url": "images/6.jpg"
+      "description": "price :€19",
+      "image_url": "images/6.jpg",
+      "price": 19
     },
     {
       "id": 2,
       "name": "Gas Hob 2",
-      "description": "some hob description1",
-      "image_url": "images/h4.jpg"
+      "description": "price :€19",
+      "image_url": "images/h4.jpg",
+      "price": 19
     },
     {
       "id": 3,
       "name": "Oven 1",
-      "description": "some hob description",
-      "image_url": "images/81.jpg"
+      "description": "price :€19",
+      "image_url": "images/81.jpg",
+      "price": 19
     }
   ],
   "appliances": [
     {
-      "id": 3,
+      "id": 22,
       "name": "Refrigerator 1",
-      "description": "some hob description",
-      "image_url": "images/f4.jpeg"
+      "description": "price :€19",
+      "image_url": "images/f4.jpeg",
+      "price": 19
     },
     {
-      "id": 3,
+      "id": 23,
       "name": "Refrigerator 2",
-      "description": "some hob description",
-      "image_url": "images/f2.jpg"
+      "description": "price :€19",
+      "image_url": "images/f2.jpg",
+      "price": 19
     },
     {
-      "id": 3,
+      "id": 24,
       "name": "Refrigerator 3",
-      "description": "some hob description",
-      "image_url": "images/f5.jpg"
+      "description": "price :€19",
+      "image_url": "images/f5.jpg",
+      "price": 19
     }
   ],
   "sinks": [
     {
-      "id": 3,
+      "id": 31,
       "name": "Sink 1",
-      "description": "some hob description",
-      "image_url": "images/s1.jpg"
+      "description": "price :€19",
+      "image_url": "images/s1.jpg",
+      "price": 19
     },
     {
-      "id": 3,
+      "id": 32,
       "name": "Sink 2",
-      "description": "some hob description",
-      "image_url": "images/s2.jpg"
+      "description": "price :€19",
+      "image_url": "images/s2.jpg",
+      "price": 19
     },
     {
-      "id": 3,
+      "id": 33,
       "name": "Sink 3",
-      "description": "some hob description",
+      "description": "price :€19",
       "image_url": "images/s6.jpg",
       "price": 19
     }
@@ -64,40 +72,32 @@
     {
       "id": 11,
       "name": "Hob 1",
-      "description": "some hob description",
+      "description": "price :€19",
       "image_url": "images/6.jpg",
       "price": 19
     },
     {
       "id": 22,
       "name": "Hob 2",
-      "description": "some hob description",
+      "description": "price :€19",
       "image_url": "images/7.jpg",
       "price": 19
     }
   ],
   "cart": [
     {
-      "id": 33,
-      "name": "Hob 1",
-      "description": "some hob description",
+      "id": 1,
+      "name": "Gas Hob 1",
+      "description": "price :€19",
       "image_url": "images/6.jpg",
-      "addedToCart": true,
-      "price": 19
+      "price": 19,
+      "addedToCart": true
     },
     {
-      "id": 22,
-      "name": "Hob 2",
-      "description": "some hob description",
-      "image_url": "images/7.jpg",
-      "addedToCart": true,
-      "price": 19
-    },
-    {
-      "id": 11,
-      "name": "Hob 1",
-      "description": "some hob description",
-      "image_url": "images/6.jpg",
+      "id": 2,
+      "name": "Gas Hob 2",
+      "description": "price :€19",
+      "image_url": "images/h4.jpg",
       "price": 19,
       "addedToCart": true
     }
